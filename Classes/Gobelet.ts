@@ -9,7 +9,7 @@ export default class Gobelet {
 
   /**
    * Méthode qui permet de faire un lancer de plusieurs dés contenus dans un gobelet
-   * @param nbDes Le nombre dés contenus dans un gobelet
+   * @param nbDes Le nombre de dés contenus dans un gobelet
    * @returns La somme des lancers de dés
    */
   public lancer(nbDes: number): number {
