@@ -5,7 +5,12 @@ export default class De {
     this._valeur = 0;
   }
 
-  lancer() {
-    return Math.floor(Math.random() * 6) + 1;
+  /**
+   * Méthode qui permet de faire un lancer de dé
+   * @returns Une valeur entre 1 et 6
+   */
+  public lancer(): number {
+    this._valeur = Math.floor(Math.random() * 6) + 1;
+    return this._valeur;
   }
 }
