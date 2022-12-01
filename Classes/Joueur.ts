@@ -24,7 +24,7 @@ export default class Joueur {
    * Méthode qui affiche le score avec le nom du jouer
    * @returns Un joli message
    */
-  public afficherScore(): string {
-    return `${this._nom} a marqué ${this._score} points`;
+  public afficherScore(): void {
+    console.log(`${this._nom} a marqué ${this._score} points`);
   }
 }
