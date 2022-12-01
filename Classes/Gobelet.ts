@@ -15,7 +15,7 @@ export default class Gobelet {
   public lancer(nbDes: number): number {
     const de: De = new De();
     let somme: number = 0;
-    for (let index = 0; index <= nbDes; index++) {
+    for (let index = 0; index < nbDes; index++) {
       somme += de.lancer();
     }
     this._valeur = somme;

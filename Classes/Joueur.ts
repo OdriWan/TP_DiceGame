@@ -3,10 +3,12 @@ import Gobelet from "./Gobelet";
 export default class Joueur {
   public _nom: string;
   public _score: number;
+  public _nbManchesGagnees: number;
 
   constructor(nom: string) {
     this._nom = nom;
     this._score = 0;
+    this._nbManchesGagnees = 0;
   }
 
   /**
@@ -25,6 +27,6 @@ export default class Joueur {
    * @returns Un joli message
    */
   public afficherScore(): void {
-    console.log(`${this._nom} a marqué ${this._score} points`);
+    console.log(`Iel a marqué ${this._score} points ! \n`);
   }
 }
